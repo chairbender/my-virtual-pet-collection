@@ -1,24 +1,29 @@
 CREATE TABLE game (
-  id int NOT NULL PRIMARY KEY AUTOINCREMENT,
+  id int NOT NULL PRIMARY KEY,
   name TEXT NOT NULL
 );
 
+
+createGame: INSERT INTO game (id, name) VALUES (:id, :game);
+
 CREATE TABLE shell (
-  id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+  id INT NOT NULL PRIMARY KEY,
   name TEXT NOT NULL,
-  thumbnailImagePath TEXT NOT NULL,
   gameId INT NOT NULL REFERENCES game(id)
 );
+
+createShell: INSERT INTO shell (id, gameId, name) VALUES (:id, :gameId, :game);
 
 CREATE TABLE pet (
-  id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+  id INT NOT NULL PRIMARY KEY,
   name TEXT NOT NULL,
-  thumbnailImagePath TEXT NOT NULL,
   gameId INT NOT NULL REFERENCES game(id)
 );
 
+createPet: INSERT INTO pet (id, gameId, name) VALUES (:id, :gameId, :game);
+
 CREATE TABLE ownedShell (
-  id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+  id INT NOT NULL PRIMARY KEY,
   shellId INT REFERENCES shell(id)
 );
 

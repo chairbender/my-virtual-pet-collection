@@ -1,0 +1,13 @@
+INSERT INTO game (id, name)
+VALUES
+  (0, "Spy x Family Tamagotchi"),
+  (1, "Digital Monster X Version XC");
+
+INSERT INTO shell (id, gameId, name)
+VALUES
+  (0, 0, "Anyatchi Pink")
+  (1, 0, "SPY Green")
+  (2, 0, "Anyatchi Pink")
+  (3, 1, "Red (Japanese)")
+  (4, 1, "Translucent Red and Gold (English)")
+  (5, 1, "Metallic Navy and Silver (English)")
