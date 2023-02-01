@@ -1,6 +1,6 @@
 # my_virtual_pet_collection
 
-A new Flutter project.
+A free, open-source app for virtual pet enthusiasts. Track your collection, completion, and hatches.
 
 ## Getting Started
 

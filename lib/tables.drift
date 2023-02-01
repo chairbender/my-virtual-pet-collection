@@ -1,0 +1,29 @@
+CREATE TABLE game (
+  id int NOT NULL PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL
+);
+
+CREATE TABLE shell (
+  id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  thumbnailImagePath TEXT NOT NULL,
+  gameId INT NOT NULL REFERENCES game(id)
+);
+
+CREATE TABLE pet (
+  id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  thumbnailImagePath TEXT NOT NULL,
+  gameId INT NOT NULL REFERENCES game(id)
+);
+
+CREATE TABLE ownedShell (
+  id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+  shellId INT REFERENCES shell(id)
+);
+
+CREATE TABLE obtainedPet (
+  ownedShellId INT REFERENCES ownedShell(id),
+  petId INT REFERENCES pet(id),
+  PRIMARY KEY(ownedShellId, petId)
+);
