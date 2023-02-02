@@ -1,0 +1,55 @@
+{
+  "games": [
+    {
+      "type": "game",
+      "id": "tamagotchiNanoSpyFamily",
+      "names": {
+        "en": "Spy X Family Tamagotchi"
+      },
+      "shells": [
+        {
+          "id": "anyatchiPink",
+          "names": {
+            "en": "Anyatchi Pink",
+            "ja": "アーニャっちピンク"
+          }
+        },
+        {
+          "id": "spyGreen",
+          "names": {
+            "en": "Spy Green",
+            "ja": "スパイグリーン"
+          }
+        }
+      ]
+    },
+    {
+      "type": "game",
+      "id": "dmxXC",
+      "names": {
+        "en": "Digital Monster X Version XC",
+        "ja": "デジタルモンスターＸ２　レッド"
+      },
+      "shells": [
+        {
+          "id": "red",
+          "names": {
+            "en": "Red (Japanese)"
+          }
+        },
+        {
+          "id": "redGold",
+          "names": {
+            "en": "Translucent Red and Gold (English)"
+          }
+        },
+        {
+          "id": "navySilver",
+          "names": {
+            "en": "Metallic Navy and Silver (English)"
+          }
+        }
+      ]
+    }
+  ]
+}
