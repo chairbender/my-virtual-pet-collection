@@ -2,19 +2,12 @@
 
 A free, open-source app for virtual pet enthusiasts. Track your collection, completion, and hatches.
 
-Some names have been translated to English via online tools when official English translations
-were not found. I make no claims as to their accuracy.
+Please note that, out of an abundance of caution, images of sprites, shells, artwork, etc... will not be included
+or incorporated into this app.
 
+# Disclaimer
 
-## Getting Started
+This repository and app are not affiliated, associated, authorized, endorsed by, or in any way officially connected with
+the various games, brands, and franchises depicted in the repository and app.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+All names, marks, emblems and images are registered trademarks of their respective owners.

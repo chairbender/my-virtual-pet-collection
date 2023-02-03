@@ -3,11 +3,15 @@
     {
       "type": "game",
       "id": "tamagotchiNanoSpyFamily",
+      "links": {
+        "wiki": "https://tamagotchi.fandom.com/wiki/Spy_x_Family_Tamagotchi"
+      },
       "names": {
         "en": "Spy X Family Tamagotchi"
       },
       "pets": [
         {
+          "id": "uniformAnya",
           "names": {
             "ja": "制服アーニャ",
             "romaji": "seifuku ānya",
@@ -15,6 +19,7 @@
           }
         },
         {
+          "id": "departmentAnya",
           "names": {
             "ja": "デパートおでかけアーニャ",
             "romaji": "depāto o dekake ānya",
@@ -22,6 +27,7 @@
           }
         },
         {
+          "id": "tailingAnya",
           "names": {
             "ja": "尾行アーニャ",
             "romaji": "bikō ānya",
@@ -29,6 +35,7 @@
           }
         },
         {
+          "id": "swimsuitAnya",
           "names": {
             "ja": "水着アーニャ",
             "romaji": "mizugi ānya",
@@ -36,6 +43,7 @@
           }
         },
         {
+          "id": "girlyOutfit",
           "names": {
             "ja": "ガーリーコーデ",
             "romaji": "gārī kōde",
@@ -43,6 +51,7 @@
           }
         },
         {
+          "id": "classicalOutfit",
           "names": {
             "ja": "クラシカルコーデ",
             "romaji": "kurashikaru kōde",
@@ -50,13 +59,15 @@
           }
         },
         {
+          "id": "wizardOutfit",
           "names": {
             "ja": "魔法使い風コーデ",
             "romaji": "mahōtsukaifū kōde",
-            "en": "Wizard Style Outfit"
+            "en": "Wizard Outfit"
           }
         },
         {
+          "id": "pajamasAnya",
           "names": {
             "ja": "パジャマアーニャ",
             "romaji": "pajama ānya",
@@ -64,6 +75,7 @@
           }
         },
         {
+          "id": "walkAnya",
           "names": {
             "ja": "お散歩アーニャ",
             "romaji": "o sanpo ānya",
@@ -71,6 +83,7 @@
           }
         },
         {
+          "id": "gymAnya",
           "names": {
             "ja": "体操服アーニャ",
             "romaji": "taisōfuku ānya",
@@ -78,6 +91,7 @@
           }
         },
         {
+          "id": "academicOutfit",
           "names": {
             "ja": "アカデミックコーデ",
             "romaji": "akademikku kōde",
@@ -85,6 +99,7 @@
           }
         },
         {
+          "id": "schoolboyOutfit",
           "names": {
             "ja": "スクールボーイコーデ",
             "romaji": "sukūrubōi kōde",
@@ -92,6 +107,7 @@
           }
         },
         {
+          "id": "dressUpOutfit",
           "names": {
             "ja": "ドレスアップコーデ",
             "romaji": "doresuappu kōde",
@@ -99,6 +115,7 @@
           }
         },
         {
+          "id": "detectiveAnya",
           "names": {
             "ja": "探偵風アーニャ",
             "romaji": "tanteifū ānya",
@@ -129,6 +146,10 @@
       "names": {
         "en": "Digital Monster X Version XC",
         "ja": "デジタルモンスターＸ２　レッド"
+      },
+      "links": {
+        "wiki": "https://wikimon.net/Digital_Monster_X_Ver.2",
+        "evoChart": "https://humulos.com/digimon/dmx/2/#anchor_xr"
       },
       "shells": [
         {
