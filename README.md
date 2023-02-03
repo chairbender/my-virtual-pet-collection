@@ -8,6 +8,6 @@ or incorporated into this app.
 # Disclaimer
 
 This repository and app are not affiliated, associated, authorized, endorsed by, or in any way officially connected with
-the various games, brands, and franchises depicted in the repository and app.
+the various games, brands, and franchises depicted or linked to in the repository and app.
 
 All names, marks, emblems and images are registered trademarks of their respective owners.
