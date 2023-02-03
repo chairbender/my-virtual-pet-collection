@@ -172,6 +172,30 @@
             "romaji": "kīmon",
             "en": "Keemon"
           }
+        },
+        {
+          "id": "yarmon",
+          "names": {
+            "ja": "ヤーモン",
+            "romaji": "Yāmon",
+            "en": "Yarmon"
+          }
+        },
+        {
+          "id": "agumon",
+          "names": {
+            "ja": "アグモン（黒）（X抗体）",
+            "romaji": "Agumon （Kuro） （X Kōtai）",
+            "en": "Agumon (Black) (X-Antibody)"
+          }
+        },
+        {
+          "id": "gomamon",
+          "names": {
+            "ja": "ゴマモン（X抗体）",
+            "romaji": "Gomamon （X kōtai）",
+            "en": "Gomamon (X-Antibody)"
+          }
         }
       ],
       "shells": [
