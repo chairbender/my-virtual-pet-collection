@@ -6,6 +6,106 @@
       "names": {
         "en": "Spy X Family Tamagotchi"
       },
+      "pets": [
+        {
+          "names": {
+            "ja": "制服アーニャ",
+            "romaji": "seifuku ānya",
+            "en": "Uniform Anya"
+          }
+        },
+        {
+          "names": {
+            "ja": "デパートおでかけアーニャ",
+            "romaji": "depāto o dekake ānya",
+            "en": "Department Store Outing Anya"
+          }
+        },
+        {
+          "names": {
+            "ja": "尾行アーニャ",
+            "romaji": "bikō ānya",
+            "en": "Tailing Anya"
+          }
+        },
+        {
+          "names": {
+            "ja": "水着アーニャ",
+            "romaji": "mizugi ānya",
+            "en": "Swimsuit Anya"
+          }
+        },
+        {
+          "names": {
+            "ja": "ガーリーコーデ",
+            "romaji": "gārī kōde",
+            "en": "Girly Outfit"
+          }
+        },
+        {
+          "names": {
+            "ja": "クラシカルコーデ",
+            "romaji": "kurashikaru kōde",
+            "en": "Classical Outfit"
+          }
+        },
+        {
+          "names": {
+            "ja": "魔法使い風コーデ",
+            "romaji": "mahōtsukaifū kōde",
+            "en": "Wizard Style Outfit"
+          }
+        },
+        {
+          "names": {
+            "ja": "パジャマアーニャ",
+            "romaji": "pajama ānya",
+            "en": "Pajamas Anya"
+          }
+        },
+        {
+          "names": {
+            "ja": "お散歩アーニャ",
+            "romaji": "o sanpo ānya",
+            "en": "Walk Anya"
+          }
+        },
+        {
+          "names": {
+            "ja": "体操服アーニャ",
+            "romaji": "taisōfuku ānya",
+            "en": "Gym Clothes Anya"
+          }
+        },
+        {
+          "names": {
+            "ja": "アカデミックコーデ",
+            "romaji": "akademikku kōde",
+            "en": "Academic Outfit"
+          }
+        },
+        {
+          "names": {
+            "ja": "スクールボーイコーデ",
+            "romaji": "sukūrubōi kōde",
+            "en": "Schoolboy Outfit"
+          }
+        },
+        {
+          "names": {
+            "ja": "ドレスアップコーデ",
+            "romaji": "doresuappu kōde",
+            "en": "Dress-Up Outfit"
+          }
+        },
+        {
+          "names": {
+            "ja": "探偵風アーニャ",
+            "romaji": "tanteifū ānya",
+            "en": "Detective Anya"
+          }
+        }
+      ],
       "shells": [
         {
           "id": "anyatchiPink",

@@ -2,6 +2,10 @@
 
 A free, open-source app for virtual pet enthusiasts. Track your collection, completion, and hatches.
 
+Some names have been translated to English via online tools when official English translations
+were not found. I make no claims as to their accuracy.
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
