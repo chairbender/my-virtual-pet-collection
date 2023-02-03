@@ -193,8 +193,160 @@
           "id": "gomamon",
           "names": {
             "ja": "ゴマモン（X抗体）",
-            "romaji": "Gomamon （X kōtai）",
+            "romaji": "Gomamon （X Kōtai）",
             "en": "Gomamon (X-Antibody)"
+          }
+        },
+        {
+          "id": "kokuwamon",
+          "names": {
+            "ja": "コクワモン（X抗体）",
+            "romaji": "Kokuwamon （X Kōtai）",
+            "en": "Kokuwamon (X-Antibody)"
+          }
+        },
+        {
+          "id": "herissmon",
+          "names": {
+            "ja": "エリスモン",
+            "romaji": "Erisumon",
+            "en": "Herissmon"
+          }
+        },
+        {
+          "id": "duskmon",
+          "names": {
+            "ja": "ダスクモン",
+            "romaji": "Dasukumon",
+            "en": "Duskmon"
+          }
+        },
+        {
+          "id": "darkTyranomon",
+          "names": {
+            "ja": "ダークティラノモン（X抗体）",
+            "romaji": "Dākutiranomon （X Kōtai）",
+            "en": "Dark Tyranomon (X-Antibody)"
+          }
+        },
+        {
+          "id": "mantaraymon",
+          "names": {
+            "ja": "マンタレイモン（X抗体）",
+            "romaji": "Mantareimon （X Kōtai）",
+            "en": "Mantaraymon (X-Antibody)"
+          }
+        },
+        {
+          "id": "kuwagamon",
+          "names": {
+            "ja": "クワガーモン（X抗体）",
+            "romaji": "Kuwagāmon （X Kōtai）",
+            "en": "Kuwagamon (X-Antibody)"
+          }
+        },
+        {
+          "id": "allomon",
+          "names": {
+            "ja": "アロモン（X抗体）",
+            "romaji": "Aromon （X Kōtai）",
+            "en": "Allomon (X-Antibody)"
+          }
+        },
+        {
+          "id": "numemon",
+          "names": {
+            "ja": "ヌメモン（X抗体）",
+            "romaji": "Numemon （X Kōtai）",
+            "en": "Numemon (X-Antibody)"
+          }
+        },
+        {
+          "id": "filmon",
+          "names": {
+            "ja": "フィルモン",
+            "romaji": "Firumon",
+            "en": "Filmon"
+          }
+        },
+        {
+          "id": "velgrmon",
+          "names": {
+            "ja": "ベルグモン",
+            "romaji": "Berugumon",
+            "en": "Velgrmon"
+          }
+        },
+        {
+          "id": "metalGreymon",
+          "names": {
+            "ja": "メタルグレイモン（ウィルス種）（X抗体）",
+            "romaji": "Metarugureimon （Wirusushu） （X Kōtai）",
+            "en": "Metal Greymon (Virus) (X-Antibody)"
+          }
+        },
+        {
+          "id": "ladyDevimon",
+          "names": {
+            "ja": "レディーデビモン（X抗体）",
+            "romaji": "Redīdebimon （X Kōtai）",
+            "en": "Lady Devimon (X-Antibody)"
+          }
+        },
+        {
+          "id": "okuwamon",
+          "names": {
+            "ja": "オオクワモン（X抗体）",
+            "romaji": "Ōkuwamon （X Kōtai）",
+            "en": "Okuwamon (X-Antibody)"
+          }
+        },
+        {
+          "id": "triceramon",
+          "names": {
+            "ja": "トリケラモン（X抗体）",
+            "romaji": "Torikeramon （X Kōtai）",
+            "en": "Triceramon (X-Antibody)"
+          }
+        },
+        {
+          "id": "mammon",
+          "names": {
+            "ja": "マンモン（X抗体）",
+            "romaji": "Manmon （X Kōtai）",
+            "en": "Mammon (X-Antibody)"
+          }
+        },
+        {
+          "id": "mametyramon",
+          "names": {
+            "ja": "マメティラモン",
+            "romaji": "Mametiramon",
+            "en": "Mametyramon"
+          }
+        },
+        {
+          "id": "stiffilmon",
+          "names": {
+            "ja": "スティフィルモン",
+            "romaji": "Sutifirumon",
+            "en": "Stiffilmon"
+          }
+        },
+        {
+          "id": "kaiserLeomon",
+          "names": {
+            "ja": "カイザーレオモン",
+            "romaji": "Kaizāreomon",
+            "en": "Kaiser Leomon"
+          }
+        },
+        {
+          "id": "blackWarGreymon",
+          "names": {
+            "ja": "ブラックウォーグレイモン（X抗体）",
+            "romaji": "Burakkuwōgureimon （X Kōtai）",
+            "en": "Black War Greymon (X-Antibody)"
           }
         }
       ],
