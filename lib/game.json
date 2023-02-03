@@ -3,18 +3,22 @@
     {
       "type": "game",
       "id": "tamagotchiNanoSpyFamily",
-      "links": {
-        "wiki": "https://tamagotchi.fandom.com/wiki/Spy_x_Family_Tamagotchi"
-      },
+      "links": [
+        {
+          "name": "Fandom Wiki",
+          "url": "https://tamagotchi.fandom.com/wiki/Spy_x_Family_Tamagotchi"
+        }
+      ],
       "names": {
-        "en": "Spy X Family Tamagotchi"
+        "en": "Spy X Family Tamagotchi",
+        "enShort": "Spy X Family"
       },
       "pets": [
         {
           "id": "uniformAnya",
           "names": {
             "ja": "制服アーニャ",
-            "romaji": "seifuku ānya",
+            "romaji": "Seifuku Ānya",
             "en": "Uniform Anya"
           }
         },
@@ -22,7 +26,7 @@
           "id": "departmentAnya",
           "names": {
             "ja": "デパートおでかけアーニャ",
-            "romaji": "depāto o dekake ānya",
+            "romaji": "Depāto o Dekake Ānya",
             "en": "Department Store Outing Anya"
           }
         },
@@ -30,7 +34,7 @@
           "id": "tailingAnya",
           "names": {
             "ja": "尾行アーニャ",
-            "romaji": "bikō ānya",
+            "romaji": "Bikō Ānya",
             "en": "Tailing Anya"
           }
         },
@@ -38,7 +42,7 @@
           "id": "swimsuitAnya",
           "names": {
             "ja": "水着アーニャ",
-            "romaji": "mizugi ānya",
+            "romaji": "Mizugi Ānya",
             "en": "Swimsuit Anya"
           }
         },
@@ -46,7 +50,7 @@
           "id": "girlyOutfit",
           "names": {
             "ja": "ガーリーコーデ",
-            "romaji": "gārī kōde",
+            "romaji": "Gārī Kōde",
             "en": "Girly Outfit"
           }
         },
@@ -54,7 +58,7 @@
           "id": "classicalOutfit",
           "names": {
             "ja": "クラシカルコーデ",
-            "romaji": "kurashikaru kōde",
+            "romaji": "Kurashikaru Kōde",
             "en": "Classical Outfit"
           }
         },
@@ -62,7 +66,7 @@
           "id": "wizardOutfit",
           "names": {
             "ja": "魔法使い風コーデ",
-            "romaji": "mahōtsukaifū kōde",
+            "romaji": "Mahōtsukaifū Kōde",
             "en": "Wizard Outfit"
           }
         },
@@ -70,7 +74,7 @@
           "id": "pajamasAnya",
           "names": {
             "ja": "パジャマアーニャ",
-            "romaji": "pajama ānya",
+            "romaji": "Pajama Ānya",
             "en": "Pajamas Anya"
           }
         },
@@ -78,7 +82,7 @@
           "id": "walkAnya",
           "names": {
             "ja": "お散歩アーニャ",
-            "romaji": "o sanpo ānya",
+            "romaji": "O Sanpo Ānya",
             "en": "Walk Anya"
           }
         },
@@ -86,7 +90,7 @@
           "id": "gymAnya",
           "names": {
             "ja": "体操服アーニャ",
-            "romaji": "taisōfuku ānya",
+            "romaji": "Taisōfuku Ānya",
             "en": "Gym Clothes Anya"
           }
         },
@@ -94,7 +98,7 @@
           "id": "academicOutfit",
           "names": {
             "ja": "アカデミックコーデ",
-            "romaji": "akademikku kōde",
+            "romaji": "Akademikku kōde",
             "en": "Academic Outfit"
           }
         },
@@ -102,7 +106,7 @@
           "id": "schoolboyOutfit",
           "names": {
             "ja": "スクールボーイコーデ",
-            "romaji": "sukūrubōi kōde",
+            "romaji": "Sukūrubōi Kōde",
             "en": "Schoolboy Outfit"
           }
         },
@@ -110,7 +114,7 @@
           "id": "dressUpOutfit",
           "names": {
             "ja": "ドレスアップコーデ",
-            "romaji": "doresuappu kōde",
+            "romaji": "Doresuappu Kōde",
             "en": "Dress-Up Outfit"
           }
         },
@@ -118,7 +122,7 @@
           "id": "detectiveAnya",
           "names": {
             "ja": "探偵風アーニャ",
-            "romaji": "tanteifū ānya",
+            "romaji": "Tanteifū Ānya",
             "en": "Detective Anya"
           }
         }
@@ -128,6 +132,7 @@
           "id": "anyatchiPink",
           "names": {
             "en": "Anyatchi Pink",
+            "enShort": "Pink",
             "ja": "アーニャっちピンク"
           }
         },
@@ -135,6 +140,7 @@
           "id": "spyGreen",
           "names": {
             "en": "Spy Green",
+            "enShort": "Green",
             "ja": "スパイグリーン"
           }
         }
@@ -145,28 +151,48 @@
       "id": "dmxXC",
       "names": {
         "en": "Digital Monster X Version XC",
+        "enShort": "DMX XC",
         "ja": "デジタルモンスターＸ２　レッド"
       },
-      "links": {
-        "wiki": "https://wikimon.net/Digital_Monster_X_Ver.2",
-        "evoChart": "https://humulos.com/digimon/dmx/2/#anchor_xr"
-      },
+      "links": [
+        {
+          "name": "Wikimon",
+          "url": "https://wikimon.net/Digital_Monster_X_Ver.2"
+        },
+        {
+          "name": "Humulos Evo Guide",
+          "url": "https://humulos.com/digimon/dmx/2/#anchor_xr"
+        }
+      ],
+      "pets": [
+        {
+          "id": "keemon",
+          "names": {
+            "ja": "キーモン",
+            "romaji": "kīmon",
+            "en": "Keemon"
+          }
+        }
+      ],
       "shells": [
         {
           "id": "red",
           "names": {
-            "en": "Red (Japanese)"
+            "en": "Red (Japanese)",
+            "enShort": "Red"
           }
         },
         {
           "id": "redGold",
           "names": {
-            "en": "Translucent Red and Gold (English)"
+            "en": "Translucent Red and Gold (English)",
+            "enShort": "Red/Gold"
           }
         },
         {
           "id": "navySilver",
           "names": {
+            "enShort": "Navy/Silver",
             "en": "Metallic Navy and Silver (English)"
           }
         }
