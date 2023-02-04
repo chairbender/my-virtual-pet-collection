@@ -1,7 +1,6 @@
 {
   "games": [
     {
-      "type": "game",
       "id": "tamagotchiNanoSpyFamily",
       "links": [
         {
@@ -147,7 +146,6 @@
       ]
     },
     {
-      "type": "game",
       "id": "dmxXC",
       "names": {
         "en": "Digital Monster X Version XC",
