@@ -348,6 +348,174 @@
             "romaji": "Burakkuwōgureimon （X Kōtai）",
             "en": "Black War Greymon (X-Antibody)"
           }
+        },
+        {
+          "id": "grandisKuwagamon",
+          "names": {
+            "ja": "グランディスクワガーモン",
+            "romaji": "Gurandisu Kuwagāmon",
+            "en": "Grandis Kuwagamon"
+          }
+        },
+        {
+          "id": "chaosdramon",
+          "names": {
+            "ja": "カオスドラモン（X抗体）",
+            "romaji": "Kaosudoramon （X Kōtai）",
+            "en": "Chaosdramon (X-Antibody)"
+          }
+        },
+        {
+          "id": "rosemon",
+          "names": {
+            "ja": "ロゼモン（X抗体）",
+            "romaji": "Rozemon （X Kōtai）",
+            "en": "Rosemon (X-Antibody)"
+          }
+        },
+        {
+          "id": "skullMammon",
+          "names": {
+            "ja": "スカルマンモン（X抗体）",
+            "romaji": "Sukarumanmon （X Kōtai）",
+            "en": "Skull Mammon (X-Antibody)"
+          }
+        },
+        {
+          "id": "rasenmonFury",
+          "names": {
+            "ja": "ラセンモン：激昂モード",
+            "romaji": "Rasenmon ： Gekkō Mōdo",
+            "en": "Rasenmon: Fury Mode"
+          }
+        },
+        {
+          "id": "ofanimonFalldown",
+          "names": {
+            "ja": "オファニモン：フォールダウンモード（X抗体）",
+            "romaji": "Ofanimon ： Fōrudaun Mōdo （X Kōtai）",
+            "en": "Ofanimon: Falldown Mode (X-Antibody)"
+          }
+        },
+        {
+          "id": "bagramon",
+          "names": {
+            "ja": "バグラモン",
+            "romaji": "Baguramon",
+            "en": "Bagramon"
+          }
+        },
+        {
+          "id": "ultimateBrachimon",
+          "names": {
+            "ja": "アルティメットブラキモン",
+            "romaji": "Arutimetto Burakimon",
+            "en": "Ultimate Brachimon"
+          }
+        },
+        {
+          "id": "beelStarmon",
+          "names": {
+            "ja": "ベルスターモン（X抗体）",
+            "romaji": "Berusutāmon （X Kōtai）",
+            "en": "Beel Starmon (X-Antibody)"
+          }
+        },
+        {
+          "id": "princeMamemon",
+          "names": {
+            "ja": "プリンスマメモン（X抗体）",
+            "romaji": "Purinsu Mamemon （X Kōtai）",
+            "en": "Prince Mamemon (X-Antibody)"
+          }
+        },
+        {
+          "id": "metalPiranimon",
+          "names": {
+            "ja": "メタルピラニモン",
+            "romaji": "Metaru Piranimon",
+            "en": "Metal Piranimon"
+          }
+        },
+        {
+          "id": "raihimon",
+          "names": {
+            "ja": "ライヒモン",
+            "romaji": "Raihimon",
+            "en": "Raihimon"
+          }
+        },
+        {
+          "id": "demon",
+          "names": {
+            "ja": "デーモン（X抗体）",
+            "romaji": "Dēmon （X Kōtai）",
+            "en": "Demon (X-Antibody)"
+          }
+        },
+        {
+          "id": "lilithmon",
+          "names": {
+            "ja": "リリスモン（X抗体）",
+            "romaji": "Ririsumon （X Kōtai）",
+            "en": "Lilithmon (X-Antibody)"
+          }
+        },
+        {
+          "id": "leviamon",
+          "names": {
+            "ja": "リヴァイアモン（X抗体）",
+            "romaji": "Rivaiamon （X Kōtai）",
+            "en": "Leviamon (X-Antibody)"
+          }
+        },
+        {
+          "id": "barbamon",
+          "names": {
+            "ja": "バルバモン（X抗体）",
+            "romaji": "Barubamon （X Kōtai）",
+            "en": "Barbamon (X-Antibody)"
+          }
+        },
+        {
+          "id": "beelzebumon",
+          "names": {
+            "ja": "ベルゼブモン（X抗体）",
+            "romaji": "Beruzebumon （X Kōtai）",
+            "en": "Beelzebumon (X-Antibody)"
+          }
+        },
+        {
+          "id": "diabolomon",
+          "names": {
+            "ja": "ディアボロモン（X抗体）",
+            "romaji": "Diaboromon （X Kōtai）",
+            "en": "Diablomon (X-Antibody)"
+          }
+        },
+        {
+          "id": "rasenmon",
+          "names": {
+            "ja": "ラセンモン",
+            "romaji": "Rasenmon",
+            "en": "Rasenmon"
+          }
+        },
+        {
+          "id": "ancientSphinxmon",
+          "names": {
+            "ja": "エンシェントスフィンクモン",
+            "romaji": "Enshento Sufinkumon",
+            "en": "Ancient Sphinxmon"
+          }
+        },
+        {
+          "id": "darknessBagramon",
+          "names": {
+            "ja": "ダークネスバグラモン",
+            "romaji": "Dākunesu Baguramon",
+            "en": "Darkness Bagramon"
+          }
         }
       ],
       "shells": [
