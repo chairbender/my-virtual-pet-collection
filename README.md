@@ -27,3 +27,9 @@ This repository, app, and its authors are not affiliated, associated, authorized
 the various games, toys, devices, brands, and franchises depicted or linked to in the repository and app.
 
 All names, marks, emblems and images are registered trademarks of their respective owners.
+
+### Contribution
+
+Unless you explicitly state otherwise, any contribution intentionally submitted
+for inclusion in `my-virtual-pet-collection` by you, as defined in the Apache-2.0 license, shall be
+dual licensed as above, without any additional terms or conditions.
