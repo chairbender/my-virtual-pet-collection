@@ -15,6 +15,8 @@ This project is licensed under either of
 * MIT license ([LICENSE-MIT](LICENSE-MIT) or
   https://opensource.org/licenses/MIT)
 
+at your option.
+
 # Disclaimer
 Certain links in this repository, such as in the game database, will lead to websites which are not under the control of the authors of this
 repository. When visitors navigate to these links, they will leave this repository. 
