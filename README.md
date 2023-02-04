@@ -6,9 +6,16 @@ Please note that, out of an abundance of caution, images of sprites, shells, art
 in nor with this app. Also, this app will not provide a means to facilitate the acquisition of such materials. 
 PRs attempting to add such capabilities will be rejected.
 
-# Disclaimer
-This repository is licensed under MIT (see LICENSE.txt).
+# License
 
+This project is licensed under either of
+
+* Apache License, Version 2.0, ([LICENSE-APACHE](LICENSE-APACHE) or
+  https://www.apache.org/licenses/LICENSE-2.0)
+* MIT license ([LICENSE-MIT](LICENSE-MIT) or
+  https://opensource.org/licenses/MIT)
+
+# Disclaimer
 Certain links in this repository, such as in the game database, will lead to websites which are not under the control of the authors of this
 repository. When visitors navigate to these links, they will leave this repository. 
 The authors of this repository have no control whatsoever over and accept no liability in respect 
