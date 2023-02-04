@@ -3,7 +3,7 @@
 A free, open-source app for virtual pet enthusiasts. Track your collection, completion, and hatches.
 
 Please note that, out of an abundance of caution, images of sprites, shells, artwork, etc... will not be included
-in nor with this app. Also, this app will not provide a means to facilitate the acquisition of potentially copyrighted materials. 
+in nor with this app. Also, this app will not provide a means to facilitate the acquisition of such materials. 
 PRs attempting to add such capabilities will be rejected.
 
 # Disclaimer
