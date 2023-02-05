@@ -1,16 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:my_virtual_pet_collection/game/game_dao.dart';
+import '../main.dart';
 
 class AddTrackedShellPage extends StatelessWidget {
-  const AddTrackedShellPage({super.key});
+  final GameDAO gameDAO;
+
+  AddTrackedShellPage({super.key}) :
+    gameDAO = getIt.get<GameDAO>();
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Add Shell'),
+        title: const Text('Choose Game'),
       ),
-      body: const Center(
-        child: Text('Shell Picker Goes Here'),
+      body: Center(
+        child: ListView(
+          children: gameDAO.gameList.games.map((e) => Text(e.names.name())).toList()
+        )
       ),
     );
   }

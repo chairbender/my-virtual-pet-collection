@@ -29,12 +29,16 @@ class Link with LinkMappable {
 
 @MappableClass()
 class Names with NamesMappable {
-  final String en;
-  final String enShort;
-  final String ja;
-  final String romaji;
+  final String? en;
+  final String? enShort;
+  final String? ja;
+  final String? romaji;
 
   const Names(this.en, this.enShort, this.ja, this.romaji);
+
+  String name() {
+    return enShort ?? en ?? ja ?? romaji ?? "<UNKNOWN>";
+  }
 }
 
 @MappableClass(discriminatorValue: null)
