@@ -36,6 +36,7 @@ class Names with NamesMappable {
 
   const Names(this.en, this.enShort, this.ja, this.romaji);
 
+  // TODO: allow user prefs to specify naming prefs
   String name() {
     return enShort ?? en ?? ja ?? romaji ?? "<UNKNOWN>";
   }
