@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:isar/isar.dart';
 import 'package:my_virtual_pet_collection/game/game_dao.dart';
+import 'package:my_virtual_pet_collection/user/user.dart';
 import '../main.dart';
 import 'game/game.dart';
 
@@ -8,8 +10,7 @@ import 'game/game.dart';
 class AddTrackedShellPage extends StatelessWidget {
   final List<Game> games;
 
-  AddTrackedShellPage({super.key}) :
-        games = _sortGames(getIt.get<GameDAO>());
+  AddTrackedShellPage({super.key}) : games = _sortGames(getIt.get<GameDAO>());
 
   @override
   Widget build(BuildContext context) {
@@ -18,28 +19,23 @@ class AddTrackedShellPage extends StatelessWidget {
         title: const Text('Choose Game'),
       ),
       body: Center(
-        child: ListView.builder(
-          itemCount: games.length,
-          prototypeItem: ListTile(
-            title: Text(games.first.names.name())
-          ),
-          itemBuilder: (context, index) {
-            return GestureDetector(
-              child: Card(
-                child: ListTile(
-                  title: Text(games[index].names.name()),
-                ),
+          child: ListView.builder(
+        itemCount: games.length,
+        prototypeItem: ListTile(title: Text(games.first.names.name())),
+        itemBuilder: (context, index) {
+          return GestureDetector(
+            child: Card(
+              child: ListTile(
+                title: Text(games[index].names.name()),
               ),
-              onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => _ChooseShellScreen(games[index])
-                  )
-              ),
-            );
-          },
-        )
-      ),
+            ),
+            onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => _ChooseShellScreen(games[index]))),
+          );
+        },
+      )),
     );
   }
 
@@ -54,8 +50,7 @@ class _ChooseShellScreen extends StatelessWidget {
   final List<Shell> shells;
   final Game game;
 
-  _ChooseShellScreen(this.game, {super.key}) :
-        shells = _sortShells(game);
+  _ChooseShellScreen(this.game, {super.key}) : shells = _sortShells(game);
 
   @override
   Widget build(BuildContext context) {
@@ -65,27 +60,23 @@ class _ChooseShellScreen extends StatelessWidget {
       ),
       body: Center(
           child: ListView.builder(
-            itemCount: shells.length,
-            prototypeItem: ListTile(
-                title: Text(shells.first.names.name())
+        itemCount: shells.length,
+        prototypeItem: ListTile(title: Text(shells.first.names.name())),
+        itemBuilder: (context, index) {
+          return GestureDetector(
+            child: Card(
+              child: ListTile(
+                title: Text(shells[index].names.name()),
+              ),
             ),
-            itemBuilder: (context, index) {
-              return GestureDetector(
-                child: Card(
-                  child: ListTile(
-                    title: Text(shells[index].names.name()),
-                  ),
-                ),
-                onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => _AddShellDetailsScreen(game, shells[index])
-                    )
-                ),
-              );
-            },
-          )
-      ),
+            onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>
+                        _AddShellDetailsScreen(game, shells[index]))),
+          );
+        },
+      )),
     );
   }
 
@@ -99,21 +90,18 @@ class _ChooseShellScreen extends StatelessWidget {
 class _AddShellDetailsScreen extends StatefulWidget {
   final Game game;
   final Shell shell;
+  final Isar isar;
 
-  _AddShellDetailsScreen(this.game, this.shell, {super.key});
+  _AddShellDetailsScreen(this.game, this.shell, {super.key})
+      : isar = getIt.get<Isar>();
 
   @override
   State<StatefulWidget> createState() => _AddShellDetailsState();
-
-
-
-
 }
 
 class _AddShellDetailsState extends State<_AddShellDetailsScreen> {
   final nickController = TextEditingController();
   bool isCurrentlyOwned = true;
-
 
   @override
   void initState() {
@@ -124,39 +112,48 @@ class _AddShellDetailsState extends State<_AddShellDetailsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Enter Shell Details"),
-      ),
-      body: Column(
-        children: [
-          Text("Game: ${widget.game.names.name()}"),
-          Text("Shell: ${widget.shell.names.name()}"),
-          TextFormField(
-            controller: nickController,
-            decoration: const InputDecoration(
-                labelText: "Nickname"
+        appBar: AppBar(
+          title: const Text("Enter Shell Details"),
+        ),
+        body: Column(
+          children: [
+            Text("Game: ${widget.game.names.name()}"),
+            Text("Shell: ${widget.shell.names.name()}"),
+            TextFormField(
+              controller: nickController,
+              decoration: const InputDecoration(labelText: "Nickname"),
             ),
-          ),
-          Checkbox(
-            value: isCurrentlyOwned,
-            onChanged: (bool? value) {
-              setState(() {
-                isCurrentlyOwned = value!;
-              });
-            },
-          ),
-          Expanded(
-            child: Align(
-              alignment: Alignment.bottomCenter,
-              child: ElevatedButton(
-                child: const Text('Save'),
-                onPressed: () {/*TODO insert into Hive*/},
-              )
-            )
-          )
-        ],
-      )
-    );
+            CheckboxListTile(
+              title: const Text("Currently Owned?"),
+              value: isCurrentlyOwned,
+              onChanged: (bool? value) {
+                setState(() {
+                  isCurrentlyOwned = value!;
+                });
+              },
+            ),
+            Expanded(
+                child: Align(
+                    alignment: Alignment.bottomCenter,
+                    child: ElevatedButton(
+                      child: const Text('Save'),
+                      onPressed: () async {
+                        await widget.isar.writeTxn(() async {
+                          await widget.isar.ownedShells.put(
+                              OwnedShell()
+                                ..currentlyOwned = isCurrentlyOwned
+                                ..nickname = nickController.text
+                                ..gameShellId = gameShellId(widget.game.id, widget.shell.id)
+                          );
+                        });
+
+                        if (!mounted) return;
+                        // TODO: could switch to named routes instead of this
+                        Navigator.of(context).popUntil((route) => route.isFirst);
+                      },
+                    )))
+          ],
+        ));
   }
 
   @override
@@ -164,6 +161,8 @@ class _AddShellDetailsState extends State<_AddShellDetailsScreen> {
     nickController.dispose();
     super.dispose();
   }
+}
 
-
+String gameShellId(String gameId, String shellId) {
+  return "$gameId-$shellId";
 }

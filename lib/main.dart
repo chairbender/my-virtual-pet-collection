@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:isar/isar.dart';
 import 'package:my_virtual_pet_collection/game/game_dao.dart';
+import 'package:my_virtual_pet_collection/user/user.dart';
 import 'add_tracked_shell_page.dart';
 import 'package:get_it/get_it.dart';
 
@@ -13,6 +15,7 @@ void main() {
 
 Future _init() async {
   getIt.registerSingleton(await GameDAO.createAsync());
+  getIt.registerSingleton(await Isar.open([OwnedShellSchema,ObtainedPetSchema]));
 }
 
 class SplashScreen extends StatelessWidget {

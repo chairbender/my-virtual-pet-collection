@@ -6,7 +6,8 @@ part 'user.g.dart';
 class OwnedShell {
   Id id = Isar.autoIncrement;
 
-  late final String shellId;
+  // NOT {gameId}-{shellId}
+  late final String gameShellId;
 
   late String nickname;
 
