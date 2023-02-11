@@ -88,7 +88,7 @@ class HomePage extends StatelessWidget {
                     onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => OwnedShellDetails(userDAO.ownedShells[index]))),
+                            builder: (context) => OwnedShellDetailsScreen(userDAO.ownedShells[index]))),
                   );
                 }
               );

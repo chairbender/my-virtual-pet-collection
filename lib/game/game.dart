@@ -60,6 +60,7 @@ class BasicPet extends Pet with BasicPetMappable {
   BasicPet(super.id, super.names);
 }
 
+// TODO: validate all shell and game ids in DB are unique
 @MappableClass()
 class Shell with ShellMappable {
   final String id;

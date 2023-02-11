@@ -142,8 +142,7 @@ class _AddShellDetailsState extends State<_AddShellDetailsScreen> {
                         await widget.userDAO.createOwnedShell(OwnedShell()
                           ..currentlyOwned = isCurrentlyOwned
                           ..nickname = nickController.text
-                          ..gameShellId =
-                          gameShellId(widget.game.id, widget.shell.id));
+                          ..shellId = widget.shell.id);
 
                         if (!mounted) return;
                         // TODO: could switch to named routes instead of this
@@ -160,8 +159,4 @@ class _AddShellDetailsState extends State<_AddShellDetailsScreen> {
     nickController.dispose();
     super.dispose();
   }
-}
-
-String gameShellId(String gameId, String shellId) {
-  return "$gameId-$shellId";
 }
