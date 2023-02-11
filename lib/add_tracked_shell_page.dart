@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:isar/isar.dart';
 import 'package:my_virtual_pet_collection/game/game_dao.dart';
 import 'package:my_virtual_pet_collection/user/user.dart';
+import 'package:my_virtual_pet_collection/user/user_dao.dart';
 import '../main.dart';
 import 'game/game.dart';
 
@@ -19,23 +20,23 @@ class AddTrackedShellPage extends StatelessWidget {
         title: const Text('Choose Game'),
       ),
       body: Center(
-          child: ListView.builder(
-        itemCount: games.length,
-        prototypeItem: ListTile(title: Text(games.first.names.name())),
-        itemBuilder: (context, index) {
-          return GestureDetector(
-            child: Card(
-              child: ListTile(
-                title: Text(games[index].names.name()),
+        child: ListView.builder(
+          itemCount: games.length,
+          itemBuilder: (context, index) {
+            return GestureDetector(
+              child: Card(
+                child: ListTile(
+                  title: Text(games[index].names.name()),
+                ),
               ),
-            ),
-            onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => _ChooseShellScreen(games[index]))),
-          );
-        },
-      )),
+              onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => _ChooseShellScreen(games[index]))),
+            );
+          },
+        )
+      ),
     );
   }
 
@@ -90,10 +91,10 @@ class _ChooseShellScreen extends StatelessWidget {
 class _AddShellDetailsScreen extends StatefulWidget {
   final Game game;
   final Shell shell;
-  final Isar isar;
+  final UserDAO userDAO;
 
   _AddShellDetailsScreen(this.game, this.shell, {super.key})
-      : isar = getIt.get<Isar>();
+      : userDAO = getIt.get<UserDAO>();
 
   @override
   State<StatefulWidget> createState() => _AddShellDetailsState();
@@ -138,18 +139,16 @@ class _AddShellDetailsState extends State<_AddShellDetailsScreen> {
                     child: ElevatedButton(
                       child: const Text('Save'),
                       onPressed: () async {
-                        await widget.isar.writeTxn(() async {
-                          await widget.isar.ownedShells.put(
-                              OwnedShell()
-                                ..currentlyOwned = isCurrentlyOwned
-                                ..nickname = nickController.text
-                                ..gameShellId = gameShellId(widget.game.id, widget.shell.id)
-                          );
-                        });
+                        await widget.userDAO.createOwnedShell(OwnedShell()
+                          ..currentlyOwned = isCurrentlyOwned
+                          ..nickname = nickController.text
+                          ..gameShellId =
+                          gameShellId(widget.game.id, widget.shell.id));
 
                         if (!mounted) return;
                         // TODO: could switch to named routes instead of this
-                        Navigator.of(context).popUntil((route) => route.isFirst);
+                        Navigator.of(context)
+                            .popUntil((route) => route.isFirst);
                       },
                     )))
           ],

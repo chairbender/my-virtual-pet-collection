@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'game.dart';
 
 /// DAO for accessing the game database.
-/// Thread safe.
 class GameDAO {
 
   final GameList gameList;

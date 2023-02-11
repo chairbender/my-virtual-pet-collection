@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:isar/isar.dart';
 import 'package:my_virtual_pet_collection/game/game_dao.dart';
-import 'package:my_virtual_pet_collection/user/user.dart';
+import 'package:my_virtual_pet_collection/user/user_dao.dart';
+import 'package:provider/provider.dart';
 import 'add_tracked_shell_page.dart';
 import 'package:get_it/get_it.dart';
+
+import 'owned_shell_details.dart';
 
 final GetIt getIt = GetIt.instance;
 
@@ -15,7 +17,7 @@ void main() {
 
 Future _init() async {
   getIt.registerSingleton(await GameDAO.createAsync());
-  getIt.registerSingleton(await Isar.open([OwnedShellSchema,ObtainedPetSchema]));
+  getIt.registerSingleton(await UserDAO.createAsync());
 }
 
 class SplashScreen extends StatelessWidget {
@@ -50,7 +52,7 @@ class MyApp extends StatelessWidget {
           future: _initFuture,
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.done) {
-              return const HomePage();
+              return HomePage();
             } else {
               return SplashScreen();
             }
@@ -60,7 +62,8 @@ class MyApp extends StatelessWidget {
 }
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  final UserDAO userDAO;
+  HomePage({super.key}) : userDAO = getIt.get<UserDAO>();
 
   @override
   Widget build(BuildContext context) {
@@ -68,8 +71,30 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('My Virtual Pet Collection'),
       ),
-      body: const Center(
-        child: Text("Your Collection Here"),
+      body: ChangeNotifierProvider(
+        create: (context) => userDAO,
+        child: Center(
+          child: Consumer<UserDAO>(
+            builder: (context, userDAO, child) {
+              return ListView.builder(
+                itemCount: userDAO.ownedShells.length,
+                itemBuilder: (context, index) {
+                  return GestureDetector(
+                    child: Card(
+                      child: ListTile(
+                        title: Text(userDAO.ownedShells[index].nickname),
+                      ),
+                    ),
+                    onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => OwnedShellDetails(userDAO.ownedShells[index]))),
+                  );
+                }
+              );
+            }
+          )
+        )
       ),
       floatingActionButton: FloatingActionButton(
         heroTag: 'addTrackedShell',
