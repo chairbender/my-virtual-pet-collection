@@ -19,6 +19,15 @@ class UserDAO extends ChangeNotifier {
     notifyListeners();
   }
 
+
+  deleteOwnedShell(int id) async {
+    await isar.writeTxn(() async {
+      await isar.ownedShells.delete(id);
+    });
+    ownedShells = await _fetchOwnedShells(isar);
+    notifyListeners();
+  }
+
   static Future<List<OwnedShell>> _fetchOwnedShells(Isar isar) async {
     return isar.txn(() async { return List.unmodifiable(await isar.ownedShells.where().findAll()); });
   }
@@ -27,4 +36,5 @@ class UserDAO extends ChangeNotifier {
     return Isar.open([OwnedShellSchema,ObtainedPetSchema])
         .then((value) async => UserDAO(value, await _fetchOwnedShells(value)));
   }
+
 }
